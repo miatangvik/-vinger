@@ -16,19 +16,9 @@ class Kjottdeig {
   double grampris2 = pris2 / vekt2;
   
   if (grampris1 < grampris2) {
-  System.out.println("Kjøttdeig A er billigst");
+    System.out.println("Kjøttdeig A er billigst");
   } else {
-  System.out.println("Kjøttdeig B er billigst");
+    System.out.println("Kjøttdeig B er billigst");
   }
   }
 }
-  
-  
-  /*
-  String vekt1Lest = showInputDialog("Vekt kjøttdeig A i gram: ");
-  String vekt2Lest = showInputDialog("Vekt kjøttdeig B i gram: ");
-  int vekt1 = Integer.parseInt(vekt1Lest);
-  int vekt2 = Integer.parseInt(vekt2Lest);
-  double pris1 = Double.parseDouble(pris1Lest);
-  double pris2 = Double.parseDouble(pris2Lest);
-  */
