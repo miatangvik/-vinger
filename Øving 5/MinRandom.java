@@ -12,6 +12,6 @@ class MinRandom {
   }
   
   public double nesteDesimaltall(double nedre, double ovre) { // intervallet <nedre, ovre>
-    return (random.nextDouble() * (ovre - nedre) + nedre); // spør john inge om dette
+    return (random.nextDouble() * (ovre - nedre) + nedre);
   }
 }
