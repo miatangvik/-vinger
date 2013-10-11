@@ -23,7 +23,7 @@ public class NyString {
   
   public String getFjerningAvTegn(char tegn) {
     String tegnFjernet = "";
-    while (tekst != null) {
+    if (tekst != null) {
       tegnFjernet = tekst.replace(tegn, ' ');
     }
     return tegnFjernet;
