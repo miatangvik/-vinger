@@ -24,8 +24,8 @@ class KlientTemperaturer {
       System.out.printf("%.1f", test[i]);
       System.out.println();
     }
-        
     System.out.println();
+    
     test = maned.getMiddeltemperaturPrTime();
     for (int i = 0; i < test.length; i++) {
       System.out.print("Middeltemperaturen for time " + (i + 1) + " i måneden var ");
