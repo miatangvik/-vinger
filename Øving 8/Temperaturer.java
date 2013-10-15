@@ -13,7 +13,7 @@ class Temperaturer {
   private double[][] temperatur;
   private double[] middeltemperaturPrDag;
   
-  public Temperaturer(int antDager, int antTimer) {
+  public Temperaturer(int antDager, int antTimer) { // Kontruktør
     this.antDager = antDager;
     this.antTimer = antTimer;
     this.temperatur = new double[antDager][antTimer];
@@ -26,7 +26,7 @@ class Temperaturer {
     }
   }
   
-  public double[] middeltemperaturPrDag() {
+  public double[] getMiddeltemperaturPrDag() { // a) Finner middeltemperaturen for hver dag i måneden
     middeltemperaturPrDag = new double[antDager];
     for (int i = 0; i < antDager; i++) {
       for (int j = 0; j < antTimer; j++) {
@@ -37,7 +37,7 @@ class Temperaturer {
     return middeltemperaturPrDag;
   }
   
-  public double[] middeltemperaturPrTime() {
+  public double[] getMiddeltemperaturPrTime() { // b) Finner middeltemperaturen for hver time i døgnet for måneden
     double[] middeltemperaturPrTime = new double[antTimer];
     for (int i = 0; i < antTimer; i++) {
       for (int j = 0; j < antDager; j++) {
@@ -48,7 +48,7 @@ class Temperaturer {
     return middeltemperaturPrTime;
   }
   
-  public double middeltemperaturManed() {
+  public double getMiddeltemperaturManed() { // c) Finner middeltemperaturen for hele måneden
     double middeltemperaturManed = 0;
     for (int i = 0; i < middeltemperaturPrDag.length; i++) {
       middeltemperaturManed += middeltemperaturPrDag[i];
@@ -56,7 +56,7 @@ class Temperaturer {
     return middeltemperaturManed / antDager;
   }
   
-  public int[] gruppertTemperatur() {
+  public int[] getGruppertTemperatur() { // d) Finner antall døgn med middeltemperatur innen gitte grupper
     int[] gruppertTemperatur = new int[5];
     for (int i = 0; i < antDager; i++) {
       if (middeltemperaturPrDag[i] < (-5)) {
