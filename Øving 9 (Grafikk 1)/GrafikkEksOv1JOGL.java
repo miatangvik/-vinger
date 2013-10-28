@@ -1,3 +1,5 @@
+package oving9;
+
 /*
  * GrafikkEksempelOv1JOGL.java JHN
  * Filen inneholder to klasser:
@@ -8,8 +10,11 @@
  * en firkant og en sirkel. JOGL er javabindingen som benyttes mot OPENGL. */
 
 import java.awt.*; // klassene Color og Graphics
+
 import javax.swing.*; // klassene JFrame og JPanel
+
 import java.util.*;
+
 import javax.media.opengl.*; //JOGL klasser
 import javax.media.opengl.glu.*; //glu klasser
 
@@ -23,7 +28,7 @@ class Vindu extends JFrame {
 	}
 }
 
-/*Klassen som inneholder main*/
+/* Klassen som inneholder main */
 
 class GrafikkEksOv1JOGL {
 	public static void main(String[] args) {
